@@ -1,0 +1,112 @@
+/* 30/08/23 Survey Form using HTML/CSS Portfolio Project*/
+
+
+body {
+  font-family: arial, sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/04/21/09/textile-2918844_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  background-color: #ccd1b0;
+  margin: 10vw;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 8vh;
+  margin-bottom: 15px;
+}
+
+#description {
+  font-size: 4vh;
+  margin-bottom: 32px;
+
+}
+
+p {
+  font-size: 4vh;
+}
+
+
+#comment {
+  font-size: 4vh;
+}
+
+input, select, button {
+  margin-top: 6px;
+}
+
+label {
+    margin-bottom: 6px;
+}
+
+textarea {
+  margin-top: 6px;
+  margin-bottom: 15px;
+  height: 20vh;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 15px;
+  background-color: #ebe8e6;
+  border-radius: 3px;
+}
+
+button:hover {
+    background-color: #665f51;
+}
+
+footer {
+    text-align: center;
+    background-color: #ccd1b0;
+    color: black;
+    margin: 10vw;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 3px;
+}
+
+.selector {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+}
+
+.selected {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 2vh;
+  background-color: #f0e9dd;
+  border: none;
+  font-size: 3vh;
+}
+
+button:hover {
+    background-color: #665f51;
+}
+
+#copyright {
+  font-size: 3vh;
+}
+
+a:hover {
+  background-color: 
+#665f51;
+}
