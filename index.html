@@ -1,0 +1,79 @@
+<!-- 30/08/23 Survey Form using HTML/CSS Portfolio Project-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <div id="main">
+            <section>
+            <h1 id="title">Customer Survey Form</h1>
+            <p id="description">Please fill in this form if you have recently bought a product or service from us!</p>
+        </section>
+        <div>
+            <!-- action attribute specifies where form data sent (url-address) to when user presses submit and method attribute states method it is sent via and POST is more secure than GET in this case-->
+            <form id="survey-form" action="https://www.exampledestination.c@m/submit-data" method="post">
+                <div>
+                    <label id="name-label">Enter Full Name: </label>
+                    <input id="name" type="text" required placeholder="name goes here..."/>
+                </div>
+                <div>
+                    <label id="email-label">Enter Email Address: </label>
+                    <input id="email" type="email" required placeholder="example@example.com"/>
+                </div>
+                <div>
+                    <label id="number-label">Enter Age (Secure): </label>
+                    <!--min and max attributes specify upper and lower limits for ranges of values like allowable age ranges etc-->
+                    <input id="number" type="number" min="16" max="120" placeholder="16..." required/>
+                </div>
+                <div>
+                    <label>How satisfied are you with the product/service?</label>
+                    <select id="dropdown">
+                        <!-- selected attribute for default visible option and disabled attribute so not valid option-->
+                        <option selected disabled>Please choose</option>
+                        <option name="shopper-happiness" value="satisfied">Satisfied</option>
+                        <option name="shopper-happiness" value="neutral">Neutral</option>
+                        <option name="shopper-happiness" value="unsatisfied">Unsatisfied</option>
+                    </select>
+                </div>
+                <div>
+                    <br>
+                    <p>Please tell us whether you are a regular shopper or not!</p>
+                    <label class="selected">Regular Shopper</label>
+                    <!-- value = unique input info, and name = id for database to group input of same type, and if from same name group ensures multiple radio  buttons cant be both selected same time -->
+                    <div/>
+                    <input type="radio" value="regular" class="selector" name="shopper-type"/>
+                    <label class="selected">Occasional Shopper</label>
+                    <input type="radio" class="selector" value="occasional" name="shopper-type"/>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <p>How do you normally shop? You can select both options below...</p>
+                    <label class="selected">Online</label>
+                    <input type="checkbox" class="selector" value="online" name="shopper-style"/>
+                    <label class="selected">Instore</label>
+                    <input type="checkbox" class="selector" value="instore" name="shopper-style"/>
+                </div>
+                <br>
+                <div id="comments">
+                    <label class="selected" id="comment">Comments/Complaints: </label>
+                    <textarea name="feedback" placeholder="Let us know what you think!"></textarea>
+                </div>
+                <div>
+                    <button id="submit" type="submit">Send Form</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <!-- &copy; is used to make html copyright symbol-->
+        <p id="copyright">Copyright &copy;2023 by <a href="https://github.com/trmerritt" target="_blank">trm</a>. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
